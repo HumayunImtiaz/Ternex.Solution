@@ -15,8 +15,8 @@ function Companies() {
             Trusted Companies
         </h1>
 
-    <div className="grid grid-cols-2 md:grid-cols-3 max-w-screen-2xl container mx-auto md:px-28 px-4  
-                    w-[87%] p-10 rounded-lg place-items-start gap-10  ">
+    <div className="grid grid-cols-2 md:grid-cols-3 max-w-screen-2xl container mx-auto md:px-28   
+                    md:w-[87%] w-[100%] ml-2 md:ml-20 p-10 rounded-lg place-items-start gap-10  pl-0 ">
                         
       
       <div className=" flex justify-center border md:w-52 w-40 rounded-md md:p-4 p-2 bg-gray-100 

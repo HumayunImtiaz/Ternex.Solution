@@ -10,11 +10,11 @@ function Banner() {
         <h1 className="text-4xl font-bold">
         Navigating Your Strategic {" "}
         <div className="mt-5"> 
-        <span className="text-5xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">Digital Success</span>
+        <span className=" md:text-5xl text-4xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">Digital Success</span>
         </div>
         
         </h1>
-        <p className="text-lg">
+        <p className=" md:text-lg ">
           TERNEX delivers top-notch video editing, social media management, and web development services. 
           We create impactful digital content and seamless online experiences. Transform your brand’s digital presence with us.
         </p>

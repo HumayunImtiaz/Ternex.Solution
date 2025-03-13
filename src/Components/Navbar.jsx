@@ -180,7 +180,7 @@ import About from './About';
             authUser?<Logout/>: <div className="cursor-pointer">
             <a 
             href='https://www.linkedin.com/company/ternex/?viewAsMember=true'
-            >< FaLinkedin className="text-blue-500 h-7 w-7 "/></a>
+            >< FaLinkedin className="text-blue-500  h-7 w-7"/></a>
 
 
 

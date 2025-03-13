@@ -42,11 +42,11 @@ function Contact() {
     return (
         <>
             <Navbar />
-            <div className='flex h-screen items-center justify-center mt-10 md:mr-72  '>
-                <div className="w-[600px]  sm:w-7">
-                    <div className=''>
+            <div className='flex h-screen items-center justify-center mt-10 md:mr-72    '>
+                <div className="">
+                    <div className='w-full'>
                         <form
-                            className='  bg-gray-100 w-96 flex flex-col p-5 justify-center items-center dark:bg-slate-700 dark:text-white
+                            className=' bg-gray-100 md:w-96 border-red-600 w-52 p-10 ml-0  flex flex-col md:px-56  px-40 md:ml-[350px] justify-center items-center dark:bg-slate-700 dark:text-white
                                        rounded-xl hover:bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600'
                             onSubmit={handleSubmit(onSubmit)}
                         >
@@ -57,7 +57,7 @@ function Contact() {
                                 <input
                                     type="name"
                                     placeholder='Enter the Name'
-                                    className='px-44 py-5 pl-2 border rounded-md outline-none dark:text-black'
+                                    className='  md:px-44 px-14 pl-1  py-5 md:pl-1 border rounded-md outline-none dark:text-black'
                                     {...register("name", { required: true })}
                                 />
                                 {errors.name?.type === "required" && <p className='text-red-700' role='alert'>Please enter your name</p>}
@@ -69,7 +69,7 @@ function Contact() {
                                 <input
                                     type="email"
                                     placeholder='Enter the Email'
-                                    className='px-44  py-5 pl-2 border rounded-md outline-none dark:text-black'
+                                    className='md:px-44 px-14 pl-1   py-5 md:pl-1 border rounded-md outline-none dark:text-black'
                                     {...register("email", { required: true })}
                                 />
                                 {errors.email?.type === "required" && <p className='text-red-700'>Please enter your email</p>}
@@ -80,7 +80,7 @@ function Contact() {
                                 <br />
                                 <textarea
                                     placeholder='Enter message'
-                                    className='dark:text-black border px-52  py-5 pl-2 rounded-lg '
+                                    className='dark:text-black border md:px-44 px-16 pl-1   py-5 md:pl-1 rounded-lg '
                                     {...register("textarea", { required: true })}
                                 ></textarea>
                                 {errors.textarea?.type === "required" && <p className='text-red-700'>Please enter your message</p>}

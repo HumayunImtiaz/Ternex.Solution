@@ -8,21 +8,30 @@ import Slider from "react-slick";
 
 function Course() {
 
-  const[book,setBook]=useState([])
-  useEffect(()=>{
-    const getBook=async ()=>{
-      try{
-        const res=await axios.get("http://localhost:4001/book")
-        const data=res.data.filter((data)=>data.catagory==="Pro")
-        console.log(data)
-        setBook(data)
+  const [book, setBook]=useState([])
+    
+    
+    useEffect(()=>{
+      const getVideo=async()=>{
+        try{
+          const res= await fetch('/list.json')
+          const data= await res.json()
+          const filterdata=  data.filter(item =>item.catagory==="video")
+          setBook(filterdata)
+    
+          // const res=await axios.get("http://localhost:4001/book")
+          // const data=res.data.filter((data)=>data.catagory==="Edit")
+          // console.log("this is backend",data)
+          // setBook(data)
+        }
+        catch(error){
+          console.log(error)
+  
+        }
       }
-      catch(error){
-        console.log(error)
-      }
-    }
-    getBook();
-  },[]);
+      getVideo();
+    },[])
+  
     // const paidData=list.filter((data)=>data.catagory==="Paid")
 
     var settings = {

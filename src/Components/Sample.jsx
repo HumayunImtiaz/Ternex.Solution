@@ -9,7 +9,7 @@ function Sample() {
      <div className="bg-gradient-to-br from-green-600 from-10% via-primary via-40% to-blue-700 opacity-90 dark:bg-black dark:text-white">
 
        
-        <div className=' h-28 text-center  mt-16'> 
+        <div className=' h-28 text-center  mt-12'> 
             <h1 className='md:text-3xl text-2xl font-bold p-16  h-28 '>Samples Of Editing Style</h1>
         </div>
         <div className='flex flex-col justify-center items-center border h-full w-full py-5 px-10  '>

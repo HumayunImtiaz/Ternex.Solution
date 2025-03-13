@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')).render(
 
    <AuthProvider>
 
-   <div className='dark:bg-slate-500 dark:text-white  '>
+   <div className= 'bg-slate-300 dark:bg-slate-500 dark:text-white '>
   <App />
   </div>
 

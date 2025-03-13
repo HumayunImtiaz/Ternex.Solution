@@ -78,8 +78,8 @@ function Webservice() {
     <>
     <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 mt-20 ">
         <div className='flex-col text-center '> 
-        <h1 className='font-bold text-3xl pb-2'>Web Solutions for Every Business</h1>
-        <p className='text-lg mt-3'>
+        <h1 className='font-bold text-2xl md:text-3xl pb-2'>Web Solutions for Every Business</h1>
+        <p className=' md:text-lg mt-3'>
           Our website development packages offer tailored solutions for businesses of all sizes, ensuring a fast, secure, and user-friendly online presence. From sleek landing pages to fully functional e-commerce stores, 
           we provide responsive designs, seamless navigation, and optimized performance to help you stand out in the digital world.
       </p>

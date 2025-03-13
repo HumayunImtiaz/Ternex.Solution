@@ -5,7 +5,7 @@ function Footer() {
     <>
     <div className=''>
     <hr />
-    <footer className="footer footer-center text-base-content rounded p-10 mt-5 dark:bg-slate-900 dark:text-white">
+    <footer className="flex flex-col footer footer-center text-base-content rounded p-10 mt-5 dark:bg-slate-900 dark:text-white">
   <nav className="grid grid-flow-col gap-4">
     <a href='/about' className="link link-hover">About</a>
     <a href='/contact' className="link link-hover">Contact</a>
@@ -50,10 +50,10 @@ function Footer() {
     </div>
   </nav>
   
-     
+  <p className='flex justify-center items-center text-sm'>{new Date().getFullYear()} TERNEX | Empowering Your Digital Innovation </p>
   
 </footer>
-<p className='flex justify-center items-center'>{new Date().getFullYear()} TERNEX | Empowering Your Digital Innovation </p>
+
 </div>
 
     </>
