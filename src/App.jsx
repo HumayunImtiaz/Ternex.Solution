@@ -5,7 +5,7 @@ import Courses from './Courses/Courses'
 import Signup from './Components/Signup'
 import Contact from './Components/Contact'
 import toast, { Toaster } from 'react-hot-toast';
-// import { useAuth } from './Context/AuthProvider'
+import { useAuth } from './Context/AuthProvider'
 import About from './Components/About'
 import Sample from './Components/Sample'
 import Cashcowsamples from './Components/Cashcowsamples'
@@ -16,8 +16,8 @@ import ImageGenerate from './Components/ImageGenerate'
 
 function App() {
 
-  // const [authUser,setAuthUser]=useAuth();
-  // console.log("Hello how are you",authUser)
+  const [authUser,setAuthUser]=useAuth();
+  console.log("Hello how are you",authUser)
 
   return (
     <>
@@ -26,8 +26,9 @@ function App() {
 
       <Route path="/" element={<Home/>} />
 
-    <Route path='/course' element={<Courses/>}/>
-          
+    {/* <Route path='/course'
+           element={authUser?<Courses/>: <Navigate to="/signup"/>}/> */}
+      <Route path="/course" element={<Courses/>}/> 
 
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/contact" element={<Contact/>}/>

@@ -15,7 +15,7 @@ function CounterProject() {
           Download Free Images / Videos
         </a>
 
-        <div className="md:h-40 mb-7 h-32 ml-5 md:w-[80%] w-[90%] lg: md:ml-20 mt-10 bg-slate-200 dark:bg-slate-900 flex justify-around items-center rounded-2xl shadow-blue-500">
+        <div className="md:h-40 h-32 ml-5 md:w-[80%] w-[90%] lg: md:ml-20 mt-10 bg-slate-200 dark:bg-slate-900 flex justify-around items-center rounded-2xl shadow-blue-500">
           <div className="border-r-[0.5px] w-[22%]">
             <h1
               className="font-bold    md:text-4xl text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
